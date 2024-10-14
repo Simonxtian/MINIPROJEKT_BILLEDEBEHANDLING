@@ -53,11 +53,11 @@ categories = {
         [45.8039, 162.8936, 50.7721],
         [44.9355, 153.4888, 45.1187],
         [45.1864, 161.1531,  66.1181],
-	    [43.6752, 152.9081,  61.6782],
-	    [44.4531, 159.8208,  63.2256],
-	    [44.8309, 160.4163,  61.8739],
-	    [43.0294, 167.6024,  62.8192],
-	    [36.5725, 158.8622,  70.603 ],
+	[43.6752, 152.9081,  61.6782],
+	[44.4531, 159.8208,  63.2256],
+	[44.8309, 160.4163,  61.8739],
+	[43.0294, 167.6024,  62.8192],
+	[36.5725, 158.8622,  70.603 ],
         [48.1779, 100.3718,  68.259 ],
         [42.1008, 130.9627,  67.3185],
         [39.1435, 112.6216, 74.8062],
@@ -113,7 +113,7 @@ def calculate_distance(hsv1, hsv2):
 
 #Funktion for at kategorisere et billede baseret på dets gennemsnitlige HSV-værdier
 def categorize_image(avg_hsv):
-    min_distance = 255 #bare noget højt (midlertidig værdi - må bare ikke blive false senere)
+    min_distance = 239 #bare noget højt (midlertidig værdi - må bare ikke blive false senere)
 
     # Iterate over each category and calculate the distance to predefined HSV values
     for category, hsv_values in categories.items(): #itererer over hver kategori og udregner afstanden til de foruddefinerede HSV værdier
